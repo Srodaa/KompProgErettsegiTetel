@@ -104,36 +104,6 @@ nav a:hover::before {
     height: 30px;
 }
 
-.miert {
-    text-align: center;
-    font-weight: bold;
-    font-size: 60px;
-    padding-bottom: 10px;
-}
-
-
-.penzugyi {
-    font-size: 40px;
-    font-weight: bold;
-    padding-left: 20px;
-    text-align: center;
-    border-top: 5px double black;
-    border-bottom: 5px double black;
-}
-
-#szendrei {
-    border: 3px solid black;
-    border-radius: 10px;
-    float: right;
-    width: 40%;
-    margin: 7px;
-}
-
-#szabadsag {
-    font-size: 30px;
-    font-weight: bold;
-    padding-left: 30px;
-}
 
 #informacio {
     text-align: center;
@@ -148,15 +118,6 @@ nav a:hover::before {
     padding: 0px 50px 50px 50px;
 }
 
-#torzs
-{
-    padding: 20px;
-}
-
-#torzs2
-{
-    padding: 20px;
-}
 #textArea {
     display: block;
     width: 100%;
