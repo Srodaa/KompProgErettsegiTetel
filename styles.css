@@ -2,6 +2,7 @@ body {
     background-color: whitesmoke;
     font-style: normal;
     font-family: sans-serif;
+    background-image: url("hawaii.jpg");
 }
 
 p {
@@ -9,15 +10,35 @@ p {
     font-family: sans-serif;
     text-align: justify;
 }
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-header {
+nav
+{
     background: #10acb8e7;
+    border-bottom: 5px double black;
 }
+.container {
+    overflow: hidden;
+    position: relative;
+}
+.container a 
+{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+.container a.icon
+{
+    background: transparent;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.container #myLinks {
+    display: none;
+  }
+
 
 header::after {
     content: '';
@@ -31,10 +52,6 @@ header::after {
     font-weight: bold;
     color: white;
     font-size: 30px;
-}
-
-nav {
-    float: right;
 }
 
 nav ul {
@@ -79,11 +96,12 @@ nav a:hover::before {
     width: 100%;
 }
 
-.footer {
+footer {
     background-color: #303036;
     text-align: center;
     color: white;
     height: 30px;
+    float: bottom;
 }
 
 .miert {
@@ -93,10 +111,6 @@ nav a:hover::before {
     padding-bottom: 10px;
 }
 
-#wrapper2
-{
-    padding: 20px;
-}
 
 .penzugyi {
     font-size: 40px;
@@ -123,4 +137,22 @@ nav a:hover::before {
 
 #informacio {
     text-align: center;
+}
+
+#jobbra
+{
+    text-align: right;
+    font-size: 20px;
+}
+
+#torzs
+{
+    padding: 20px;
+    background-image: url("stock.jpg");
+}
+
+#torzs2
+{
+    padding: 20px;
+    background-image: url("hawaii.jpg");   
 }
