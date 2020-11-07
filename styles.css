@@ -1,8 +1,7 @@
-body {
+body { 
     background-color: whitesmoke;
     font-style: normal;
     font-family: sans-serif;
-    background-image: url("hawaii.jpg");
 }
 
 p {
@@ -10,6 +9,7 @@ p {
     font-family: sans-serif;
     text-align: justify;
 }
+
 nav
 {
     background: #10acb8e7;
@@ -96,12 +96,12 @@ nav a:hover::before {
     width: 100%;
 }
 
-footer {
+
+.footer {
     background-color: #303036;
     text-align: center;
     color: white;
     height: 30px;
-    float: bottom;
 }
 
 .miert {
@@ -139,20 +139,62 @@ footer {
     text-align: center;
 }
 
-#jobbra
-{
-    text-align: right;
-    font-size: 20px;
+#tetelkerdes {
+    
+    text-align: justify;
+}
+
+#wrapper {
+    padding: 0px 50px 50px 50px;
 }
 
 #torzs
 {
     padding: 20px;
-    background-image: url("stock.jpg");
 }
 
 #torzs2
 {
     padding: 20px;
-    background-image: url("hawaii.jpg");   
+}
+#textArea {
+    display: block;
+    width: 100%;
+  }
+
+
+.content-table {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    width: 1000px;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.FoCimek {
+    background-color: #55d6aa;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.content-table th, td {
+    padding: 12px 15px;
+}
+.content-table tbody tr {
+    border-bottom: 1px solid darkgray;
+}
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid ;
+}
+.AlCimek {
+    background-color: lightgray;
+    font-weight: bold;
+}
+li {
+    font-weight: normal;
 }
