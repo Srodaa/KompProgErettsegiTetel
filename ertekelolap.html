@@ -1,24 +1,30 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="hu">
+
 <head>
-    <meta charset="UTF-8">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Információtechnológia tétel értékelő lap</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Információtechnológia tétel értékelő lap</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
       <a class="navbar-brand">Informatikai ismeretek</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -35,279 +41,345 @@
       </div>
     </div>
   </nav>
-    <div id="wrapper">
-        <h1 id="informacio">Információtechnológia - 2016. október<br> 1. tétel - értékelő lap</h1>
-        <table class="content-table">
-            <tr class="FoCimek"> 
-              <th colspan="2">
-                Tartalom
-              </th>
-            </tr>
-            <tr> <!-- új -->
-              <th colspan="2" class="AlCimek">
-                Fogalmak ismerete 
-              </th>
-            </tr>
-            <tr> <!-- új -->
-              <th>
-                <ul>
-                  <li>
-                    Nem megfelelő. / 0 pont adható
-                  </li>
-                  <li>
-                    A fogalmak ismeretében kisebb tévedések fordulnak elő. / 1 pont adható
-                  </li>
-                  <li>
-                    Megfelelő. / 2 pont adható
-                  </li>
-                </ul>
-              </th>
-              <th> 
-                <div class="form-group">
-                  <input onblur="findTotal()" type="text"  class="osszeg" name="osszeg" size="1"> / 2 pont
-                </div>
-              </th>
-            </tr>
-          <tr> <!-- új -->
-            <th colspan="2" class="AlCimek">
-              Fogalmak definiálása, alkalmazása
-            </th>
-          </tr>
-          <tr> <!-- új -->
-            <th>
-              <ul>
-                <li>
-                  Nem megfelelő. / 0 pont adható
-                </li>
-                <li>
-                  Alkalmazásában apró tévedések, hibák fordulnak elő. / 1pont adható
-                </li>
-                <li>
-                  Teljes körű fogalommeghatározás és alkalmazás. / 2 pont adható
-                </li>
-              </ul>
-            </th>
-            <th>
-              <div class="form-group">
-                <input onblur="findTotal()" type="text" class="osszeg" name="osszeg" size="1"> / 2 pont
-              </div>
-          </tr>
-          <tr> <!-- új -->
-            <th colspan="2" class="AlCimek">
-              Tartalmi kifejtés, elvek folyamatok ismerete
-            </th>
-          </tr>
-          <tr> <!-- új -->
-            <th>
-              <ul>
-                <li>
-                  A témakör egy pontját sem tudja kifejteni. / 0 pont adható 
-                </li>
-                <li>
-                  A témakör egy-két pontját tudja csak kifejteni. / 2 pont adható 
-                </li>
-                <li>
-                  A tétel egy pontja kivételével kifejti azt, de hiányosan. / 4 pont adható
-                </li>
-                <li>
-                  A témakör minden pontját kifejti kisebb hiányossággal. / 6 pont adható
-                </li>
-                <li>
-                  A témakör minden pontját jól kifejti. / 8 pont adható
-                </li>
-              </ul>
-            </th>
-            <th> 
-              <div class="form-group">
-                <input onblur="findTotal()" type="text" class="osszeg" name="osszeg" size="1"> / 8 pont
-              </div>
-            </th>
-          </tr>
-          <tr> <!-- új -->
-            <th colspan="2" class="AlCimek">
-              Elvek, folyamatok alkalmazása
-            </th>
-          </tr>
-          <tr> <!-- új -->
-            <th>
-              <ul>
-                <li>
-                  A tételhez tartozó elveket, folyamatokat nem tudja alkalmazni. / 0 pont adható
-                </li>
-                <li>
-                  A tételhez tartozó elveket, folyamatokat csak részben tudja alkalmazni. / 1 pont adható
-                </li>
-                <li>
-                  A tételhez tartozó elveket, folyamatokat tudja alkalmazni. / 2 pont adható
-                </li>
-              </ul>
-            </th>
-            <th> 
-              <div class="form-group">
-                <input onblur="findTotal()" type="text" class="osszeg" name="osszeg" size="1"> / 2 pont
-              </div>
-            </th>
-          </tr>
-          <tr> <!-- új -->
-            <th colspan="2" class="AlCimek">
-              Összefüggések értelmezése
-            </th>
-          </tr>
-          <tr> <!-- új -->
-            <th>
-              <ul>
-                <li>
-                  Nem a megadott témáról beszél. / 0 pont adható
-                </li>
-                <li>
-                  Csak a témakör periférikus elemeire tér ki. / 1 pont adható 
-                </li>
-                <li>
-                  A témakör lényeges elemeit tárgyalja, de az összefüggések hiányosak. / 2 pont adható
-                </li>
-                <li>
-                  A tárgyalt témakörben az összefüggéseket jól látja. / 4 pont adható
-                </li>
-              </ul>
-            </th>
-            <th> 
-              <div class="form-group">
-                <input onblur="findTotal()" type="text" class="osszeg" name="osszeg" size="1"> / 4 pont
-              </div>
-            </th>
-          </tr>
-          <tr> <!-- új -->
-            <th colspan="2" class="FoCimek">
-              Felépítés
-            </th>
-          </tr>
-          <tr> <!-- új -->
-            <th colspan="2" class="AlCimek">
-              Időbeosztás
-            </th>
-          </tr>
-          <tr> <!-- új -->
-            <th>
-              <ul>
-                <li>
-                  Jelentős időzavarba kerül, elvész a részletekben. / 0 pont adható 
-                </li>
-                <li>
-                  Feleletével kicsúszik az időkeretből vagy túlságosan besűríti mondanivalóját. / 1 pont adható
-                </li>
-                <li>
-                  Látja a súlypontokat, de nem fejti ki eléggé a mondanivalóját. / 2 pont adható
-                </li>
-                <li>
-                  Logikusan felépített felelet, kihasználja az időkeretet. / 3 pont adható
-                </li>
-              </ul>
-            </th>
-            <th> 
-              <div class="form-group">
-                <input onblur="findTotal()" type="text" class="osszeg" name="osszeg" size="1"> / 3 pont
-              </div>
-            </th>
-          </tr>
-          <tr> <!-- új -->
-            <th colspan="2" class="AlCimek">
-              Felépítettség
-            </th>
-          </tr>
-          <tr> <!-- új -->
-            <th>
-            <ul>
-              <li>
-                Nincs érdemi felelet. / 0 pont adható
-              </li>
-              <li>
-                A felelet zavaros, nem felépített. / 1 pont adható
-              </li>
-              <li>
-                A felelet felépített, de egy-két gondolati törés van benne. / 2 pont adható
-              </li>
-              <li>
-                A felelet jól felépített. / 3 pont adható
-              </li>
-            </ul>
-            </th>
-            <th> 
-              <div class="form-group">
-                <input onblur="findTotal()" type="text" class="osszeg" name="osszeg" size="1"> / 3 pont 
-              </div>
-            </th>
-          </tr>
-          <tr> <!-- új -->
-            <th colspan="2" class="FoCimek">
-              Előadás, szaknyelv
-            </th>
-          </tr>
-          <tr> <!-- új -->
-            <th colspan="2" class="AlCimek">
-              Előadás
-            </th>
-          </tr>
-          <tr> <!-- új-->
-            <th>
-              <ul>
-                <li>
-                  Nincs érdemi felelet. / 0 pont adható
-                </li>
-                <li>
-                  Pontatlan, zavaros előadásmód. / 1 pont adható
-                </li>
-                <li>
-                  Kisebb bizonytalansággal történő előadásmód. / 2 pont adható
-                </li>
-                <li>
-                  Egyértelmű, követhető előadásmód. / 3 pont adható
-                </li>
-              </ul>
-            </th>
-            <th> 
-              <div class="form-group">
-                <input onblur="findTotal()" type="text" class="osszeg" name="osszeg" size="1"> / 3 pont
-              </div>
-            </th>
-          </tr>
-          <tr> <!-- új -->
-            <th colspan="2" class="AlCimek">
-              Szaknyelv
-            </th>
-          </tr>
-          <tr> <!-- új -->
-            <th>
-              <ul>
-                <li>
-                  Felületes, pontatlan előadásmód. / 0 pont adható
-                </li>
-                <li>
-                  Pontatlan, de jelzésre javít. / 1 pont adható
-                </li>
-                <li>
-                  Pontatlan, de önállóan javít. / 2 pont adható
-                </li>
-                <li>
-                  Pontos, szakszerű. / 3 pont adható
-                </li>
-              </ul>
-            </th>
-            <th> 
-              <div class="form-group">
-                <input onblur="findTotal()" type="text" class="osszeg" name="osszeg" size="1"> / 3 pont
-              </div>
-            </th>
-          </tr>
-          <tr> <!-- új -->
-            <th colspan="2">
-               <div class="form-group">
-                Összes pontszám: <input type="text" name="total" id="total" size="1"> / 30 pont
-              </div>
-            </th>
-          </tr>
-        </table>
-      </div>
-      <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+  <div id="wrapper">
+    <h1 id="informacio">Információtechnológia - 2016. október<br> 1. tétel - értékelő lap</h1>
+    <table class="content-table">
+      <tr class="FoCimek">
+        <th colspan="3">
+          Tartalom
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th colspan="3" class="AlCimek">
+          Fogalmak ismerete
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th>
+          <ul>
+            <li>
+              Nem megfelelő. / 0 pont adható
+            </li>
+            <li>
+              A fogalmak ismeretében kisebb tévedések fordulnak elő. / 1 pont adható
+            </li>
+            <li>
+              Megfelelő. / 2 pont adható
+            </li>
+          </ul>
+        </th>
+        <th>
+          <div class="table-group">
+            <input type="number" class="form-control prc" min="0" max="2" name="pont1">
+        </th>
+        <th>
+          / 2 pont
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th colspan="3" class="AlCimek">
+          Fogalmak definiálása, alkalmazása
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th>
+          <ul>
+            <li>
+              Nem megfelelő. / 0 pont adható
+            </li>
+            <li>
+              Alkalmazásában apró tévedések, hibák fordulnak elő. / 1pont adható
+            </li>
+            <li>
+              Teljes körű fogalommeghatározás és alkalmazás. / 2 pont adható
+            </li>
+          </ul>
+        </th>
+        <th>
+          <div class="table-group">
+            <input type="number" class="form-control prc" min="0" max="2" name="pont2">
+          </div>
+        </th>
+        <th>
+          / 2 pont
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th colspan="3" class="AlCimek">
+          Tartalmi kifejtés, elvek folyamatok ismerete
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th>
+          <ul>
+            <li>
+              A témakör egy pontját sem tudja kifejteni. / 0 pont adható
+            </li>
+            <li>
+              A témakör egy-két pontját tudja csak kifejteni. / 2 pont adható
+            </li>
+            <li>
+              A tétel egy pontja kivételével kifejti azt, de hiányosan. / 4 pont adható
+            </li>
+            <li>
+              A témakör minden pontját kifejti kisebb hiányossággal. / 6 pont adható
+            </li>
+            <li>
+              A témakör minden pontját jól kifejti. / 8 pont adható
+            </li>
+          </ul>
+        </th>
+        <th>
+          <div class="table-group">
+            <input type="number" class="form-control prc" min="0" max="8" name="pont3">
+          </div>
+        </th>
+        <th>
+          / 8 pont
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th colspan="3" class="AlCimek">
+          Elvek, folyamatok alkalmazása
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th>
+          <ul>
+            <li>
+              A tételhez tartozó elveket, folyamatokat nem tudja alkalmazni. / 0 pont adható
+            </li>
+            <li>
+              A tételhez tartozó elveket, folyamatokat csak részben tudja alkalmazni. / 1 pont adható
+            </li>
+            <li>
+              A tételhez tartozó elveket, folyamatokat tudja alkalmazni. / 2 pont adható
+            </li>
+          </ul>
+        </th>
+        <th>
+          <div class="table-group">
+            <input type="number" class="form-control prc" min="0" max="2" name="pont4">
+          </div>
+        </th>
+        <th>
+          / 2 pont
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th colspan="3" class="AlCimek">
+          Összefüggések értelmezése
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th>
+          <ul>
+            <li>
+              Nem a megadott témáról beszél. / 0 pont adható
+            </li>
+            <li>
+              Csak a témakör periférikus elemeire tér ki. / 1 pont adható
+            </li>
+            <li>
+              A témakör lényeges elemeit tárgyalja, de az összefüggések hiányosak. / 2 pont adható
+            </li>
+            <li>
+              A tárgyalt témakörben az összefüggéseket jól látja. / 4 pont adható
+            </li>
+          </ul>
+        </th>
+        <th>
+          <div class="table-group">
+            <input type="number" class="form-control prc" min="0" max="4" name="pont5">
+          </div>
+        </th>
+        <th>
+          / 4 pont
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th colspan="3" class="FoCimek">
+          Felépítés
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th colspan="3" class="AlCimek">
+          Időbeosztás
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th>
+          <ul>
+            <li>
+              Jelentős időzavarba kerül, elvész a részletekben. / 0 pont adható
+            </li>
+            <li>
+              Feleletével kicsúszik az időkeretből vagy túlságosan besűríti mondanivalóját. / 1 pont adható
+            </li>
+            <li>
+              Látja a súlypontokat, de nem fejti ki eléggé a mondanivalóját. / 2 pont adható
+            </li>
+            <li>
+              Logikusan felépített felelet, kihasználja az időkeretet. / 3 pont adható
+            </li>
+          </ul>
+        </th>
+        <th>
+          <div class="table-group">
+            <input type="number" class="form-control prc" min="0" max="3" name="pont6">
+          </div>
+        </th>
+        <th>
+          / 3 pont
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th colspan="3" class="AlCimek">
+          Felépítettség
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th>
+          <ul>
+            <li>
+              Nincs érdemi felelet. / 0 pont adható
+            </li>
+            <li>
+              A felelet zavaros, nem felépített. / 1 pont adható
+            </li>
+            <li>
+              A felelet felépített, de egy-két gondolati törés van benne. / 2 pont adható
+            </li>
+            <li>
+              A felelet jól felépített. / 3 pont adható
+            </li>
+          </ul>
+        </th>
+        <th>
+          <div class="table-group">
+            <input type="number" class="form-control prc" min="0" max="3" name="pont7">
+          </div>
+        </th>
+        <th>
+          / 3 pont
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th colspan="3" class="FoCimek">
+          Előadás, szaknyelv
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th colspan="3" class="AlCimek">
+          Előadás
+        </th>
+      </tr>
+      <tr>
+        <!-- új-->
+        <th>
+          <ul>
+            <li>
+              Nincs érdemi felelet. / 0 pont adható
+            </li>
+            <li>
+              Pontatlan, zavaros előadásmód. / 1 pont adható
+            </li>
+            <li>
+              Kisebb bizonytalansággal történő előadásmód. / 2 pont adható
+            </li>
+            <li>
+              Egyértelmű, követhető előadásmód. / 3 pont adható
+            </li>
+          </ul>
+        </th>
+        <th>
+          <div class="table-group">
+            <input type="number" class="form-control prc" min="0" max="3" name="pont8">
+          </div>
+        </th>
+        <th> / 3 pont</th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th colspan="3" class="AlCimek">
+          Szaknyelv
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th>
+          <ul>
+            <li>
+              Felületes, pontatlan előadásmód. / 0 pont adható
+            </li>
+            <li>
+              Pontatlan, de jelzésre javít. / 1 pont adható
+            </li>
+            <li>
+              Pontatlan, de önállóan javít. / 2 pont adható
+            </li>
+            <li>
+              Pontos, szakszerű. / 3 pont adható
+            </li>
+          </ul>
+        </th>
+        <th>
+          <div class="table-group">
+            <input type="number" class="form-control prc" min="0" max="3" name="pont9"> 
+          </div>
+        </th>
+        <th>
+          / 3 pont
+        </th>
+      </tr>
+      <tr>
+        <!-- új -->
+        <th>
+          Összes pontszám: 
+        </th>
+        <th>
+          <div class="table-group">
+            <output id="result"></output>
+          </div>
+        </th>
+        <th>
+          / 30 pont
+        </th>
+      </tr>
+    </table>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+      $('.table-group').on('input', '.prc', function () {
+        var totalSum = 0;
+        $('.table-group .prc').each(function () {
+          var inputVal = $(this).val();
+          if ($.isNumeric(inputVal)) {
+            totalSum += parseFloat(inputVal);
+          }
+        });
+        $('#result').val(totalSum);
+      });
+    </script>
+  </div>
+  <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
 
-      </body>
+</body>
+
 </html>
