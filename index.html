@@ -1,71 +1,82 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="hu">
+
 <head>
-    <meta charset="UTF-8">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Információtechnológia tétel</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <script src="script.js" ></script>
+  <meta charset="UTF-8">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Információtechnológia tétel</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-          <a class="navbar-brand">Informatikai ismeretek</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Tétel
-                  <span class="sr-only"></span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="ertekelolap.html">Értékelő lap</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <div id="wrapper">
-        <h1 id="informacio">Információtechnológia - 2016. október <br>1. tétel</h1>
-        <p id="tetelkerdes">Mutassa be a Neumann-elvű számítógépek alapvető felépítését! Ismertesse a mai számítógépek legfőbb hardverelemeit! Ismertesse a processzorok logikai felépítését és legfőbb jellemzőit! Mutassa be a számítógépben használatos memóriatípusok fajtáit, jellemzőit és azok fejlődését! Ismertesse, hogy egy számítógép konfiguráció összeállításakor milyen szempontokat kell figyelembe venni! </p>
-        <form>Itt kidolgozhatod, majd letöltheted a tételedet: <br>
-          <textarea id="textArea" name="kidolgozas" rows="10" cols="0"></textarea><br>
-          <button type="button" onclick="download()" class="letoltes">Letöltés</button>
-    </form>
-        <h2>Segítség a tétel kidolgozásához:</h2>
-        <ul>
-            <li>
-                A Neumann-elvű számítógép felépítése (Központi vezérlőegység, I/O egység, Operatív tár, Buszrendszer). 
-            </li>
-            <li>
-                A számítógép legfőbb hardverelemei (alaplap, processzor, memória, háttértár, tápegység). 
-            </li>
-            <li>
-                A processzorok logikai felépítése (CU, ALU, regiszterek), jellemzői (órajel, 32 vagy 64 bites architektúra, gyorsítótár, teljesítmény, csatolófelület).
-            </li>
-            <li>
-                A számítógépben használt memóriák típusai (ROM, RAM), jellemzői. 
-            </li>
-            <li>
-                A memóriák fejlődése (ROM típusok, RAM típusok).
-            </li>
-            <li>
-                A számítógépek összeállításánál fontos szempontok (alaplap-processzor-memória, bővítőkártyák, feladat). 
-            </li>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand">Informatikai ismeretek</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Tétel
+              <span class="sr-only"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ertekelolap.html">Értékelő lap</a>
+          </li>
         </ul>
-
-        
+      </div>
     </div>
-    <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+  </nav>
+  <div id="wrapper">
+    <h1 id="informacio">Információtechnológia - 2016. október <br>1. tétel</h1>
+    <p id="tetelkerdes">Mutassa be a Neumann-elvű számítógépek alapvető felépítését! Ismertesse a mai számítógépek
+      legfőbb hardverelemeit! Ismertesse a processzorok logikai felépítését és legfőbb jellemzőit! Mutassa be a
+      számítógépben használatos memóriatípusok fajtáit, jellemzőit és azok fejlődését! Ismertesse, hogy egy számítógép
+      konfiguráció összeállításakor milyen szempontokat kell figyelembe venni! </p>
+    <form>Itt kidolgozhatod, majd letöltheted a tételedet: <br>
+      <textarea id="textArea" name="kidolgozas" rows="10" cols="0"></textarea><br>
+      <button type="button" onclick="download()" class="letoltes">Letöltés</button>
+    </form>
+    <h2>Segítség a tétel kidolgozásához:</h2>
+    <ul>
+      <li>
+        A Neumann-elvű számítógép felépítése (Központi vezérlőegység, I/O egység, Operatív tár, Buszrendszer).
+      </li>
+      <li>
+        A számítógép legfőbb hardverelemei (alaplap, processzor, memória, háttértár, tápegység).
+      </li>
+      <li>
+        A processzorok logikai felépítése (CU, ALU, regiszterek), jellemzői (órajel, 32 vagy 64 bites architektúra,
+        gyorsítótár, teljesítmény, csatolófelület).
+      </li>
+      <li>
+        A számítógépben használt memóriák típusai (ROM, RAM), jellemzői.
+      </li>
+      <li>
+        A memóriák fejlődése (ROM típusok, RAM típusok).
+      </li>
+      <li>
+        A számítógépek összeállításánál fontos szempontok (alaplap-processzor-memória, bővítőkártyák, feladat).
+      </li>
+    </ul>
+
+
+  </div>
+  <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
 
 </body>
+
 </html>
