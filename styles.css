@@ -1,7 +1,8 @@
 html {
     scroll-behavior: smooth;
 }
-body { 
+
+body {
     background-color: whitesmoke;
     font-style: normal;
     font-family: sans-serif;
@@ -13,35 +14,35 @@ p {
     text-align: justify;
 }
 
-nav
-{
+nav {
     background: #10acb8e7;
     border-bottom: 5px double black;
 }
+
 .container {
     overflow: hidden;
     position: relative;
 }
-.container a 
-{
+
+.container a {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
 }
-.container a.icon
-{
+
+.container a.icon {
     background: transparent;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
 }
+
 .container #myLinks {
     display: none;
-  }
-
+}
 
 header::after {
     content: '';
@@ -99,14 +100,12 @@ nav a:hover::before {
     width: 100%;
 }
 
-
 .footer {
     background-color: #303036;
     text-align: center;
     color: white;
     height: 30px;
 }
-
 
 #informacio {
     text-align: center;
@@ -116,7 +115,6 @@ nav a:hover::before {
 }
 
 #tetelkerdes {
-    
     text-align: justify;
 }
 
@@ -127,7 +125,8 @@ nav a:hover::before {
 #textArea {
     display: block;
     width: 100%;
-  }
+}
+
 h2 {
     padding: 20px;
     font-weight: bold;
@@ -140,11 +139,11 @@ h2 {
     border-collapse: collapse;
     font-size: 0.9em;
     width: 1000px;
-    min-width: 400px;
     border-radius: 5px 5px 0 0;
-    overflow: hidden;
+    overflow-x: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
+
 .FoCimek {
     background-color: #55d6aa;
     color: white;
@@ -152,26 +151,31 @@ h2 {
     font-size: 20px;
     text-align: center;
 }
+
 .content-table th, td {
     padding: 12px 15px;
 }
+
 .content-table tbody tr {
     border-bottom: 1px solid darkgray;
 }
+
 .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid ;
+    border-bottom: 2px solid;
 }
+
 .AlCimek {
     background-color: lightgray;
     font-weight: bold;
 }
+
 li {
     font-weight: normal;
 }
 
 .gotopbtn {
     position: fixed;
-    width: 50px;    
+    width: 50px;
     height: 50px;
     background: #55d6aa;
     border-radius: 50%;
@@ -191,5 +195,14 @@ li {
     background: #10acb8e7;
     width: 100px;
     height: 50px;
+    text-align: center;
+}
+
+input[type=number] {
+    width: 70px;
+}
+
+#result {
+    font-weight: bold;
     text-align: center;
 }
