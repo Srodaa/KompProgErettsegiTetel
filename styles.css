@@ -6,6 +6,7 @@ body {
     background-color: whitesmoke;
     font-style: normal;
     font-family: sans-serif;
+
 }
 
 p {
@@ -205,4 +206,42 @@ input[type=number] {
 #result {
     font-weight: bold;
     text-align: center;
+}
+
+.card-body 
+{
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.1);
+    color: #10acb8e7;
+    background-color: #10acb8e7;
+    height: 80px;
+}
+.card 
+{
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+
+.card-body a:hover 
+{
+    text-decoration: none;
+}
+
+#kezdolap {
+    padding: 30px 0px;
+}
+.cim p
+{
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    padding: 25px 0px;
+    color: white;
+    
+}
+#kezdohatter {
+    background-image: url("cardbg1.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
 }
