@@ -13,6 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Információtechnológia tétel</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   <script src="script.js"></script>
@@ -28,8 +29,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="alapoldal.html">Kezdőlap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="irasbeli.html">Irásbeli </a>
+          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Tétel
+            <a class="nav-link" href="index.html">Szóbeli
               <span class="sr-only"></span>
             </a>
           </li>
@@ -41,14 +48,14 @@
     </div>
   </nav>
   <div id="wrapper">
-    <h1 id="informacio">Információtechnológia - 2016. október <br>1. tétel</h1>
+    <h1 id="informacio">Informatikai ismeretek <br>Emelt szintű szóbeli érettségi - 1. tétel</h1>
     <p id="tetelkerdes">Mutassa be a Neumann-elvű számítógépek alapvető felépítését! Ismertesse a mai számítógépek
       legfőbb hardverelemeit! Ismertesse a processzorok logikai felépítését és legfőbb jellemzőit! Mutassa be a
       számítógépben használatos memóriatípusok fajtáit, jellemzőit és azok fejlődését! Ismertesse, hogy egy számítógép
       konfiguráció összeállításakor milyen szempontokat kell figyelembe venni! </p>
     <form>Itt kidolgozhatod, majd letöltheted a tételedet: <br>
       <textarea id="textArea" name="kidolgozas" rows="10" cols="0"></textarea><br>
-      <button type="button" onclick="download()" class="letoltes">Letöltés</button>
+      <button type="button" onclick="Letoltes()" class="letoltes">Letöltés</button>
     </form>
     <h2>Segítség a tétel kidolgozásához:</h2>
     <ul>
