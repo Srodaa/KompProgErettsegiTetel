@@ -1,4 +1,4 @@
-function download(){ 
+function Letoltes(){ 
     var text = document.getElementById("textArea").value;
     text = text.replace(/\n/g, "\r\n");
     var blob = new Blob([text], { type: "text/plain"});
