@@ -373,15 +373,10 @@
 
     <!--        -->
 
-    <h1 id="informacio"><br> Írásbeli vizsga - értékelő lap</h1>
+    <h1 id="informacio"><br> Írásbeli vizsga - értékelő lap<br>I. rész</h1>
     <table class="content-table">
       <tr class="FoCimek">
         <th colspan="3">
-          I. rész
-        </th>
-      </tr>
-      <tr>
-        <th colspan="3" class="AlCimek">
           Teszt
         </th>
       </tr>
@@ -568,31 +563,381 @@
         </th>
       </tr>
     </table>
-    <script src="jquery-3.5.1.min.js"></script>
-    <script>
-      $('.table-group').on('input', '.prc', function () {
-        var totalSum = 0;
-        $('.table-group .prc').each(function () {
-          var inputVal = $(this).val();
-          if ($.isNumeric(inputVal)) {
-            totalSum += parseFloat(inputVal);
-          }
+    <h1 id="informacio"><br>II. rész</h1>
+    <table>
+      <table class="content-table">
+        <tr class="FoCimek">
+          <th colspan="3">
+            1. Szövegszerkesztési, táblázatkezelési, prezentációkészítési ismeretek
+          </th>
+        </tr>
+        <tr>
+          <th class="AlCimek" colspan="3">
+            a.) Puncsszelet
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Dokumentum mentése puncsszelet néven a szövegszerkesztő alapértelmezett formátumában
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc2" min="0" max="1" name="pont30">
+            </div>
+          </th>
+          <th>
+            / 1 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Oldalbeállítások
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc2" min="0" max="1" name="pont31">
+            </div>
+          </th>
+          <th>
+            / 1 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Szövegformázások
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc2" min="0" max="2" name="pont32">
+            </div>
+          </th>
+          <th>
+            / 2 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Táblázat
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc2" min="0" max="2" name="pont33">
+            </div>
+          </th>
+          <th>
+            / 2 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Címek formázása
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc2" min="0" max="2" name="pont34">
+            </div>
+          </th>
+          <th>
+            / 2 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Kép formázása
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc2" min="0" max="1" name="pont35">
+            </div>
+          </th>
+          <th>
+            / 1 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            A cellák szövegének formázása
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc2" min="0" max="5" name="pont36">
+            </div>
+          </th>
+          <th>
+            / 5 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Összes pontszám:
+          </th>
+          <th>
+            <div class="table-group">
+              <output id="result2"></output>
+            </div>
+          </th>
+          <th>
+            / 14 pont
+          </th>
+        </tr>
+        <tr>
+          <th class="AlCimek" colspan="3">
+            b.) Hegycsúcsok
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Táblázat mentése hegycsucsok néven
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc3" min="0" max="1" name="pont41">
+            </div>
+          </th>
+          <th>
+            / 1 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Táblázat formázása
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc3" min="0" max="4" name="pont42">
+            </div>
+          </th>
+          <th>
+            / 4 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Képletek, függvények
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc3" min="0" max="4" name="pont43">
+            </div>
+          </th>
+          <th>
+            / 4 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Szűrés, rendezés
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc3" min="0" max="2" name="pont44">
+            </div>
+          </th>
+          <th>
+            / 2 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Összes pontszám:
+          </th>
+          <th>
+            <div class="table-group">
+              <output id="result3"></output>
+            </div>
+          </th>
+          <th>
+            / 11 pont
+          </th>
+        </tr>
+        <tr>
+          <th colspan="3" class="FoCimek">
+            2. Katica büfé
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Az adatbázis létrehozása
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc4" min="0" max="2" name="pont51">
+            </div>
+          </th>
+          <th>
+            / 2 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Mezők, kulcsok beállítása, adatbevitel
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc4" min="0" max="5" name="pont52">
+            </div>
+          </th>
+          <th>
+            / 5 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            A lekérdezésekben és jelentésben pontosan a kívánt mezőket, illetve kifejezéseket jelenítette meg
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc4" min="0" max="2" name="pont53">
+            </div>
+          </th>
+          <th>
+            / 2 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            5Palacsinta lekérdezés
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc4" min="0" max="3" name="pont54">
+            </div>
+          </th>
+          <th>
+            / 3 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            6Frissít lekérdezés
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc4" min="0" max="3" name="pont55">
+            </div>
+          </th>
+          <th>
+            / 3 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            7Fizetendo lekérdezés
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc4" min="0" max="4" name="pont56">
+            </div>
+          </th>
+          <th>
+            / 4 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            8Segéd lekérdezés
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc4" min="0" max="2" name="pont57">
+            </div>
+          </th>
+          <th>
+            / 2 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            9Katica jelentés
+          </th>
+          <th>
+            <div class="table-group">
+              <input type="number" class="form-control prc4" min="0" max="4" name="pont58">
+            </div>
+          </th>
+          <th>
+            / 4 pont
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Összes pontszám:
+          </th>
+          <th>
+            <div class="table-group">
+              <output id="result4"></output>
+            </div>
+          </th>
+          <th>
+            / 25 pont
+          </th>
+        </tr>
+
+      </table>
+
+
+
+      <script src="jquery-3.5.1.min.js"></script>
+      <script>
+        $('.table-group').on('input', '.prc', function () {
+          var totalSum = 0;
+          $('.table-group .prc').each(function () {
+            var inputVal = $(this).val();
+            if ($.isNumeric(inputVal)) {
+              totalSum += parseFloat(inputVal);
+            }
+          });
+          $('#result').val(totalSum);
         });
-        $('#result').val(totalSum);
-      });
-    </script>
-    <script>
-      $('.table-group').on('input', '.prc1', function () {
-        var totalSum = 0;
-        $('.table-group .prc1').each(function () {
-          var inputVal = $(this).val();
-          if ($.isNumeric(inputVal)) {
-            totalSum += parseFloat(inputVal);
-          }
+      </script>
+      <script>
+        $('.table-group').on('input', '.prc1', function () {
+          var totalSum = 0;
+          $('.table-group .prc1').each(function () {
+            var inputVal = $(this).val();
+            if ($.isNumeric(inputVal)) {
+              totalSum += parseFloat(inputVal);
+            }
+          });
+          $('#result1').val(totalSum);
         });
-        $('#result1').val(totalSum);
-      });
-    </script>
+      </script>
+      <script>
+        $('.table-group').on('input', '.prc2', function () {
+          var totalSum = 0;
+          $('.table-group .prc2').each(function () {
+            var inputVal = $(this).val();
+            if ($.isNumeric(inputVal)) {
+              totalSum += parseFloat(inputVal);
+            }
+          });
+          $('#result2').val(totalSum);
+        });
+      </script>
+      <script>
+        $('.table-group').on('input', '.prc3', function () {
+          var totalSum = 0;
+          $('.table-group .prc3').each(function () {
+            var inputVal = $(this).val();
+            if ($.isNumeric(inputVal)) {
+              totalSum += parseFloat(inputVal);
+            }
+          });
+          $('#result3').val(totalSum);
+        });
+      </script>
+      <script>
+        $('.table-group').on('input', '.prc4', function () {
+          var totalSum = 0;
+          $('.table-group .prc4').each(function () {
+            var inputVal = $(this).val();
+            if ($.isNumeric(inputVal)) {
+              totalSum += parseFloat(inputVal);
+            }
+          });
+          $('#result4').val(totalSum);
+        });
+      </script>
   </div>
   <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
 
