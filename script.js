@@ -97,7 +97,7 @@ function Eredmeny() {
   document.getElementsByName("osszesitettvegeredmeny").innerHTML = osszesitettvegeredmeny;
 
   var szazalek = osszesitettvegeredmeny / 165 * 100;
-  document.getElementById("vegeredmeny").innerHTML = osszesitettvegeredmeny + " pont, " + szazalek + "%";
+  document.getElementById("vegeredmeny").innerHTML = osszesitettvegeredmeny + " pont, " + szazalek.toFixed(2) + "%";
   if (szazalek > 80) {
     document.getElementById("erdemjegy").innerHTML = "5"
   }
