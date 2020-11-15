@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Informatikai ismeretek</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand">Informatikai ismeretek</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="alapoldal.html">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="kidolgozott.html">Kidolgozott tétel </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Tétel
+                            <span class="sr-only"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ertekelolap.html">Értékelő lap</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="wrapper">
+        <h1 id="informacio">Informatikai ismeretek <br>Emelt szintű szóbeli érettségi - 1. tétel</h1>
+        <h1 id="informacio" class="alahuzott">Kidolgozott tétel</h1>
+        <h2 class="lower">Mutassa be a Neumann-elvű számítógépek alapvető felépítését!</h2>
+        <p>
+          <ul>
+            <li>
+              Szekvenciális működés: az utasításokat sorrendben hajtja végig, egyszerre csak egyet.
+            </li>
+            <li>
+              Kettes számrendszeren használata: Kétállapotú elemekkel a kétféle számjegy könnyen modellezhető. (Hatása: a
+              mechanikus részek elvételével jelentősen csökkentek a méretek.)
+            </li>
+            <li>
+              Belső memória használata: tárolja a feldolgozás alatt álló adatokat és végrehajtandó programutasításokat.
+            </li>
+            <li>
+              Univerzális legyen a számítógép: különféle szoftverekkel különböző feladatok ellátására alkalmas.
+            </li>
+    
+          </ul>
+          <span class="beljebb">Ezeken az 1946-ban pulbikált elveken alapulnak a mai számítógépek nagy része is.</span>
+        </p>
+        <h2 class="lower">Ismertesse a mai számítógépek legfőbb hardverelemeit!</h2>
+        <p>
+          <ul>
+            <li>
+              CPU: központi feldolgozó egység
+            </li>
+            <li>
+              Busz rendszer: Kapcsolatot teremt a CPU és a memória/egyes perifériák között. (vezetékek, vezérlő áramkörök)
+            </li>
+            <li>
+              Memória: Végrehajtás alatt tárolja a programot és a szükséges adatokat: <br>
+              <span class="beljebb">ROM - Csak olvasható; RAM - Írható és olvasható</span>
+            </li>
+            <li>
+              Merevlemez: Elsődleges háttértár, a programokat és adatokat tartalmazza (nem felhasználás közben, lásd.
+              Memória)
+            </li>
+            <li>
+              Optikai lemez: Legelterjedtebb cserélhető lemezes háttértároló.
+            </li>
+            <li>
+              Alaplap: kisegítő áramkörök, órajelgenerátor, buszrendszerek, csatoló felületek egységbe foglalása
+            </li>
+            <li>
+              Tápegység: A számítógép egyes részeit árammal látja el.
+            </li>
+          </ul>
+        </p>
+        <h2 class="lower">Ismertesse a processzorok logikai felépítését és legfőbb jellemzőit!</h2>
+        <p>
+          <ul class="beljebb">
+            <p class="alahuzott">Feladatai:</p>
+            <li>
+              A program utasításainak értelmezése és végrehajtása.
+            </li>
+            <li>
+              Ezek alapján a gép részegységeinek vezérlése.
+            </li>
+            <li>
+              Az adodó számítási műveletek elvégzése.
+            </li>
+          </ul>
+          <ul class="beljebb">
+            <p class="alahuzott">Részei:</p>
+            <li>
+              CU (vezérlőegység): Értelmezi a program utasításait, előállítja a végrehajtáshoz szükséges vezérlőjeleket.
+            </li>
+            <li>
+              ALU (aritmetikai és logikai egység): Aritmetikai és logikai műveleketek elvégzése.
+            </li>
+            <li>
+              Regiszterek (fajtái):
+              <ol>
+                Programszámláló: Végrehajtásnál a következő utasítás címét tartalmazza.
+              </ol>
+              <ol>
+                Veremtár mutató: Alprogramok hívásánál a visszatérési címet és a CPU állapotát tartalmazó veremre mutat.
+              </ol>
+              <ol>
+                Akkumulátor: Általános célú regiszter, utasítások használják. (pl. aritmetikai eredmények ide kerülnek)
+              </ol>
+            </li>
+            <li>
+              Gyorsítótár: A többi, különböző sebességgel működő eszközzel való adatcserénél használatos átmeneti tár,
+              gyorsítja a műveleteket.
+            </li>
+            <li>
+              Belső órajel: Feladatok elvégzésének gyorsaságát biztosítja, manapság 3GHz is lehet.
+            </li>
+            <li>
+              Külső órajel: A frekvencia, amivel a processzor a környezetével kommunikál, manapság 800 MHz is lehet.
+            </li>
+          </ul>
+          <span class="beljebb">A processzor lehet 32 vagy 64 bites, ez a legnagyobb adatméretet jelöli, amivel a processzor
+            dolgozhat.</span>
+        </p>
+        <h2 class="lower">Mutassa be a számítógépben használatos memóriatípusok fajtáit, jellemzőit és azok fejlődését!</h2>
+        <p>
+          <ul>
+            <p class="alahuzott">RAM (közvetlen hozzáférésű memória) - Operatív memória</p>
+            <li>
+              Az éppen futó programok és az általuk használt adatok tárolása. A már nem szükséges adatok helyére újat ír.
+              Megcímzett rekeszekben tárolja az egyes adatelemeket. A megcímezhető tartomány függ a mikroprocesszortól; Pl.:
+              32 bites címzés esetén maximum 4GB memória megcímzése lehetséges. A RAM működése dinamikus; áramkörrel
+              folyamatosan frissíti tartalmát, mp-nként akár több százszor is kiolvassa, majd újra írja a tárolt adatokat.
+            </li>
+            <li>
+              Hozzáférési idő: a tárolócella címzése és a neki megfelelő adat megjelenése között eltelt idő (dinamikus
+              RAM-nál: 90ns). Feszültség hiányában törlődnek róla az adatok. <br>
+              Legfőbb jellemző paraméterei:
+              <ol>
+                Típus: DDR, DDR-II, DDR-III
+              </ol>
+              <ol>
+                Kapacitás: 512 MB, 1 GB, 2GB
+              </ol>
+              <ol>
+                Órajel: 533MHz, 667MHz, 800MHz (hozzáférés üteme)
+              </ol>
+            </li>
+          </ul>
+          <ul>
+            <p class="alahuzott">ROM - Csak olvasható memória</p>
+            <li>
+              Számítógép bekapcsolásakor a hardverkomponensek ellenőrzéséhez szükséges adatok, az operációs rendszer
+              betöltését végző programok tárolása.
+            </li>
+            <li>
+              Kicsi kapacitás, megbízható tároló, tartalmát csak ritkán kell módosítani. RAM-mal ellentétben nem igényel
+              áramellátást az adatok megőrzéséhez.
+            </li>
+            <li>
+              <span class="alahuzott">Fajtái:</span>
+              <ol>
+                ROM: Csak olvasható, ált. gyári beállításokkal rendelkezik.
+              </ol>
+    
+              <ol>
+                PROM: Egyszer írható, egyébként csak olvasható tároló. Írás speciális eszközökkel.
+              </ol>
+    
+              <ol>
+                EPROM: Újraírható tároló, törlése UV fénnyel történik. Írás speciális eszközökkel.
+              </ol>
+    
+              <ol>
+                EEPROM: Újraírható tároló, elektronikusan törölhető és írható.
+              </ol>
+              <ol>
+                flash: Hasonló az EEPROMHOZ, de nem byte-onként, hanem 512 blokkonként kezelhetőek az adatok. Pendrive-ok,
+                mp3 lejátszo, fényképezőgépek, telefonok.
+              </ol>
+            </li>
+          </ul>
+        </p>
+        <h2 class="lower">Ismertesse, hogy egy számítógép konfiguráció összeállításakor milyen szempontokat kell figyelembe
+          venni!</h2>
+        <p>
+          <ul>
+            <li>
+              A felhasználó igényeit:
+              <ol>
+                A számítógépet milyen környezetben és mire fogják használni.<br>
+                Mennyi pénz áll rendelkezésre.
+              </ol>
+            </li>
+            <li>
+              A kívánt konfiguráció minden eleme kompatibilis-e egymással.
+            </li>
+          </ul>
+        </p>
+
+
+    </div>
+    <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+    <footer>
+      &copy; Szabó Dávid
+    </footer>
+</body>
+
+</html>
