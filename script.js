@@ -95,19 +95,21 @@ function Eredmeny() {
 
   var osszesitettvegeredmeny = szobelipontszam + irasbelipontszam;
   document.getElementsByName("osszesitettvegeredmeny").innerHTML = osszesitettvegeredmeny;
+  var irasbeliszazalek = irasbelipontszam / 135 * 100;
+  var szobeliszazalek = szobelipontszam / 30 * 100;
 
   var szazalek = osszesitettvegeredmeny / 165 * 100;
   document.getElementById("vegeredmeny").innerHTML = osszesitettvegeredmeny + " pont, " + szazalek.toFixed(2) + "%";
-  if (szazalek > 80) {
+  if (szazalek > 80 && szobeliszazalek > 12 && irasbeliszazalek > 12 ) {
     document.getElementById("erdemjegy").innerHTML = "5"
   }
-  else if (szazalek > 60) {
+  else if (szazalek > 60 && szobeliszazalek > 12 && irasbeliszazalek > 12) {
     document.getElementById("erdemjegy").innerHTML = "4"
   }
-  else if (szazalek > 40) {
+  else if (szazalek > 40 && szobeliszazalek > 12 && irasbeliszazalek > 12) {
     document.getElementById("erdemjegy").innerHTML = "3"
   }
-  else if (szazalek > 25) {
+  else if (szazalek > 25 && szobeliszazalek > 12 && irasbeliszazalek > 12) {
     document.getElementById("erdemjegy").innerHTML = "2"
   }
   else {
